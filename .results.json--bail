@@ -1,0 +1,233 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 6,
+    "passes": 2,
+    "pending": 0,
+    "failures": 4,
+    "start": "2023-01-19T04:38:39.566Z",
+    "end": "2023-01-19T04:38:39.587Z",
+    "duration": 21
+  },
+  "tests": [
+    {
+      "title": "exists in the document",
+      "fullTitle": "the <ul> tag exists in the document",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 7,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "has three child <li> tags with the correct content",
+      "fullTitle": "the <ul> tag has three child <li> tags with the correct content",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 5,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "contains a nested <ul> tag within a <li>",
+      "fullTitle": "the <ul> tag contains a nested <ul> tag within a <li>",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "\n      The <ul> must contain another <ul> nested *inside* a <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul></ul>\n        </li>\n      </ul>\n    : expected ul to have descendant 'li > ul'",
+        "showDiff": true,
+        "actual": {},
+        "expected": "li > ul",
+        "stack": "AssertionError: \n      The <ul> must contain another <ul> nested *inside* a <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul></ul>\n        </li>\n      </ul>\n    : expected ul to have descendant 'li > ul'\n    at Context.<anonymous> (test/indexTest.js:49:30)\n    at processImmediate (node:internal/timers:466:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "\n      The <ul> must contain another <ul> nested *inside* a <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul></ul>\n        </li>\n      </ul>\n    : expected ul to have descendant 'li > ul'",
+            "showDiff": true,
+            "actual": "[object HTMLUListElement]",
+            "expected": "li > ul",
+            "multiple": "AssertionError: \n      The <ul> must contain another <ul> nested *inside* a <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul></ul>\n        </li>\n      </ul>\n    : expected ul to have descendant 'li > ul'",
+            "stack": "AssertionError: \n      The <ul> must contain another <ul> nested *inside* a <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul></ul>\n        </li>\n      </ul>\n    : expected ul to have descendant 'li > ul'\n    at Context.<anonymous> (test/indexTest.js:49:30)\n    at processImmediate (node:internal/timers:466:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "contains three <li> nested within the nested <ul> with the correct content",
+      "fullTitle": "the <ul> tag contains three <li> nested within the nested <ul> with the correct content",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "\n      The *nested* <ul> must contain three nested <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul>\n            <li>cheddar</li>\n            <li>mozzarella</li>\n            <li>pepper jack</li>\n          </ul>\n        </li>\n      </ul>\n    : expected ul to have descendants 'li > ul > li'",
+        "showDiff": true,
+        "actual": {},
+        "expected": "li > ul > li",
+        "stack": "AssertionError: \n      The *nested* <ul> must contain three nested <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul>\n            <li>cheddar</li>\n            <li>mozzarella</li>\n            <li>pepper jack</li>\n          </ul>\n        </li>\n      </ul>\n    : expected ul to have descendants 'li > ul > li'\n    at Context.<anonymous> (test/indexTest.js:68:30)\n    at processImmediate (node:internal/timers:466:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "\n      The *nested* <ul> must contain three nested <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul>\n            <li>cheddar</li>\n            <li>mozzarella</li>\n            <li>pepper jack</li>\n          </ul>\n        </li>\n      </ul>\n    : expected ul to have descendants 'li > ul > li'",
+            "showDiff": true,
+            "actual": "[object HTMLUListElement]",
+            "expected": "li > ul > li",
+            "multiple": "AssertionError: \n      The *nested* <ul> must contain three nested <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul>\n            <li>cheddar</li>\n            <li>mozzarella</li>\n            <li>pepper jack</li>\n          </ul>\n        </li>\n      </ul>\n    : expected ul to have descendants 'li > ul > li'",
+            "stack": "AssertionError: \n      The *nested* <ul> must contain three nested <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul>\n            <li>cheddar</li>\n            <li>mozzarella</li>\n            <li>pepper jack</li>\n          </ul>\n        </li>\n      </ul>\n    : expected ul to have descendants 'li > ul > li'\n    at Context.<anonymous> (test/indexTest.js:68:30)\n    at processImmediate (node:internal/timers:466:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "exists in the document",
+      "fullTitle": "the <ol> tag exists in the document",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "The document should have a <ol> element: expected null to exist",
+        "showDiff": false,
+        "actual": null,
+        "stack": "AssertionError: The document should have a <ol> element: expected null to exist\n    at Context.<anonymous> (test/indexTest.js:77:24)\n    at processImmediate (node:internal/timers:466:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "The document should have a <ol> element: expected null to exist",
+            "showDiff": false,
+            "actual": null,
+            "multiple": "AssertionError: The document should have a <ol> element: expected null to exist",
+            "stack": "AssertionError: The document should have a <ol> element: expected null to exist\n    at Context.<anonymous> (test/indexTest.js:77:24)\n    at processImmediate (node:internal/timers:466:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "has five child <li> tags with the correct content",
+      "fullTitle": "the <ol> tag has five child <li> tags with the correct content",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of null (reading 'querySelectorAll')\n    at Proxy.<anonymous> (node_modules/chai-dom/chai-dom.js:332:22)\n    at Proxy.methodWrapper (node_modules/chai/lib/chai/utils/addMethod.js:57:25)\n    at Context.<anonymous> (test/indexTest.js:84:31)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Cannot read properties of null (reading 'querySelectorAll')",
+        "multiple": [
+          {
+            "multiple": "TypeError: Cannot read properties of null (reading 'querySelectorAll')"
+          }
+        ]
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "contains a nested <ul> tag within a <li>",
+      "fullTitle": "the <ul> tag contains a nested <ul> tag within a <li>",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "\n      The <ul> must contain another <ul> nested *inside* a <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul></ul>\n        </li>\n      </ul>\n    : expected ul to have descendant 'li > ul'",
+        "showDiff": true,
+        "actual": {},
+        "expected": "li > ul",
+        "stack": "AssertionError: \n      The <ul> must contain another <ul> nested *inside* a <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul></ul>\n        </li>\n      </ul>\n    : expected ul to have descendant 'li > ul'\n    at Context.<anonymous> (test/indexTest.js:49:30)\n    at processImmediate (node:internal/timers:466:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "\n      The <ul> must contain another <ul> nested *inside* a <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul></ul>\n        </li>\n      </ul>\n    : expected ul to have descendant 'li > ul'",
+            "showDiff": true,
+            "actual": "[object HTMLUListElement]",
+            "expected": "li > ul",
+            "multiple": "AssertionError: \n      The <ul> must contain another <ul> nested *inside* a <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul></ul>\n        </li>\n      </ul>\n    : expected ul to have descendant 'li > ul'",
+            "stack": "AssertionError: \n      The <ul> must contain another <ul> nested *inside* a <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul></ul>\n        </li>\n      </ul>\n    : expected ul to have descendant 'li > ul'\n    at Context.<anonymous> (test/indexTest.js:49:30)\n    at processImmediate (node:internal/timers:466:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "contains three <li> nested within the nested <ul> with the correct content",
+      "fullTitle": "the <ul> tag contains three <li> nested within the nested <ul> with the correct content",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "\n      The *nested* <ul> must contain three nested <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul>\n            <li>cheddar</li>\n            <li>mozzarella</li>\n            <li>pepper jack</li>\n          </ul>\n        </li>\n      </ul>\n    : expected ul to have descendants 'li > ul > li'",
+        "showDiff": true,
+        "actual": {},
+        "expected": "li > ul > li",
+        "stack": "AssertionError: \n      The *nested* <ul> must contain three nested <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul>\n            <li>cheddar</li>\n            <li>mozzarella</li>\n            <li>pepper jack</li>\n          </ul>\n        </li>\n      </ul>\n    : expected ul to have descendants 'li > ul > li'\n    at Context.<anonymous> (test/indexTest.js:68:30)\n    at processImmediate (node:internal/timers:466:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "\n      The *nested* <ul> must contain three nested <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul>\n            <li>cheddar</li>\n            <li>mozzarella</li>\n            <li>pepper jack</li>\n          </ul>\n        </li>\n      </ul>\n    : expected ul to have descendants 'li > ul > li'",
+            "showDiff": true,
+            "actual": "[object HTMLUListElement]",
+            "expected": "li > ul > li",
+            "multiple": "AssertionError: \n      The *nested* <ul> must contain three nested <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul>\n            <li>cheddar</li>\n            <li>mozzarella</li>\n            <li>pepper jack</li>\n          </ul>\n        </li>\n      </ul>\n    : expected ul to have descendants 'li > ul > li'",
+            "stack": "AssertionError: \n      The *nested* <ul> must contain three nested <li>:\n      <ul>\n        <li>\n          4 slices of cheese\n          <ul>\n            <li>cheddar</li>\n            <li>mozzarella</li>\n            <li>pepper jack</li>\n          </ul>\n        </li>\n      </ul>\n    : expected ul to have descendants 'li > ul > li'\n    at Context.<anonymous> (test/indexTest.js:68:30)\n    at processImmediate (node:internal/timers:466:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "exists in the document",
+      "fullTitle": "the <ol> tag exists in the document",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "The document should have a <ol> element: expected null to exist",
+        "showDiff": false,
+        "actual": null,
+        "stack": "AssertionError: The document should have a <ol> element: expected null to exist\n    at Context.<anonymous> (test/indexTest.js:77:24)\n    at processImmediate (node:internal/timers:466:21)",
+        "multiple": [
+          {
+            "name": "AssertionError",
+            "message": "The document should have a <ol> element: expected null to exist",
+            "showDiff": false,
+            "actual": null,
+            "multiple": "AssertionError: The document should have a <ol> element: expected null to exist",
+            "stack": "AssertionError: The document should have a <ol> element: expected null to exist\n    at Context.<anonymous> (test/indexTest.js:77:24)\n    at processImmediate (node:internal/timers:466:21)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "has five child <li> tags with the correct content",
+      "fullTitle": "the <ol> tag has five child <li> tags with the correct content",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of null (reading 'querySelectorAll')\n    at Proxy.<anonymous> (node_modules/chai-dom/chai-dom.js:332:22)\n    at Proxy.methodWrapper (node_modules/chai/lib/chai/utils/addMethod.js:57:25)\n    at Context.<anonymous> (test/indexTest.js:84:31)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Cannot read properties of null (reading 'querySelectorAll')",
+        "multiple": [
+          {
+            "multiple": "TypeError: Cannot read properties of null (reading 'querySelectorAll')"
+          }
+        ]
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "exists in the document",
+      "fullTitle": "the <ul> tag exists in the document",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 7,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "has three child <li> tags with the correct content",
+      "fullTitle": "the <ul> tag has three child <li> tags with the correct content",
+      "file": "/Users/dennis/Development/Code/Prework/phase-0-html-lists-lab/test/indexTest.js",
+      "duration": 5,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ]
+}
